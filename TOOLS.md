@@ -33,4 +33,8 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 
 ---
 
+### API keys (stored locally)
+- Notion API key: `~/.config/notion/api_key`
+- Todoist API key: `~/.config/todoist/api_key`
+
 Add whatever helps you do your job. This is your cheat sheet.
