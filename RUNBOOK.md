@@ -106,9 +106,10 @@ To complete auth (when a browser is available):
 
 ### Path B: Google Workspace CLI (gog) — potentially easier, broader scope
 - Skill installed: `skills/gog/` (Google Workspace CLI wrapper)
-- **Note:** the `gog` binary is not installed yet in this environment (skill metadata expects Homebrew).
+- `gog` binary installed at: `~/.local/bin/gog`
+  - Install method (Linux): download release tarball from <https://github.com/steipete/gogcli/releases> and `install` the `gog` binary.
 
-If you want to use this path, install the `gog` binary (or we’ll use another install method), then:
+If you want to use this path, then:
 - `gog auth credentials /path/to/client_secret.json`
 - `gog auth add you@gmail.com --services gmail,calendar,drive,contacts,sheets,docs`
 
