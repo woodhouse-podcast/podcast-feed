@@ -32,8 +32,11 @@ Web search and web fetch are enabled.
 Config locations:
 - Gateway config: `~/.clawdbot/clawdbot.json`
 - Brave key is stored in config under:
-  - `tools.web.search.apiKey` and/or
-  - env var `BRAVE_API_KEY` (preferred for tool compatibility)
+  - `tools.web.search.apiKey` and
+  - env var `BRAVE_API_KEY`
+
+Notes:
+- Free Brave plans can be rate-limited; prefer batching searches and using `web_fetch` once you have a good target URL.
 
 **Do not commit keys** to git repos.
 
@@ -66,14 +69,23 @@ Basic checks:
 ## Todoist
 - Todoist API token stored at: `~/.config/todoist/api_key` (chmod 600)
 
+## Google Places
+- Google Places API key configured in Gateway config under `skills.entries`.
+
+## OpenAI Whisper
+- OpenAI API key for Whisper configured in Gateway config under `skills.entries.openai-whisper-api`.
+
 ---
 
-## Google Calendar (planned via CalDAV)
+## Google Calendar (planned)
+There are two paths available:
+
+### Path A: CalDAV via vdirsyncer + khal (works on Linux)
 Approach:
 - CalDAV via `vdirsyncer` + `khal`.
 
 Installed:
-- `vdirsyncer`, `khal` (apt)
+- `vdirsyncer`, `khal`, `python3-aiohttp-oauthlib` (apt)
 - Workspace skill: `skills/caldav-calendar/`
 
 Status:
@@ -87,10 +99,20 @@ Config files created:
 
 To complete auth (when a browser is available):
 1) Run: `vdirsyncer discover google_calendar`
-2) It will print a Google auth URL; open it on your computer, approve access.
-3) After approval, vdirsyncer will store the token at `google_token.json`.
-4) Then run: `vdirsyncer sync`
+2) It will print a Google auth URL and start a local callback listener.
+3) Open the URL in a desktop browser, approve access; the token is stored at `google_token.json`.
+4) Run: `vdirsyncer sync`
 5) Verify: `khal list today 7d`
+
+### Path B: Google Workspace CLI (gog) — potentially easier, broader scope
+- Skill installed: `skills/gog/` (Google Workspace CLI wrapper)
+- **Note:** the `gog` binary is not installed yet in this environment (skill metadata expects Homebrew).
+
+If you want to use this path, install the `gog` binary (or we’ll use another install method), then:
+- `gog auth credentials /path/to/client_secret.json`
+- `gog auth add you@gmail.com --services gmail,calendar,drive,contacts,sheets,docs`
+
+This can make Google integration more straightforward than CalDAV, once installed.
 
 ---
 
