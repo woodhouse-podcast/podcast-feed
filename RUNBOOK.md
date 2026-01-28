@@ -114,7 +114,12 @@ To complete auth (when a browser is available):
 
 If you want to use this path, then:
 - `gog auth credentials /path/to/client_secret.json`
-- `gog auth add you@gmail.com --services gmail,calendar,drive,contacts,sheets,docs`
+- `gogx auth add you@gmail.com --services gmail,calendar,drive,contacts,sheets,docs --manual --force-consent`
+  - Use `--manual` for headless (paste the localhost redirect URL)
+
+Current status:
+- Account authorized: `ryandeathridge@gmail.com`
+- Verified working (calendar list succeeded).
 
 This can make Google integration more straightforward than CalDAV, once installed.
 
