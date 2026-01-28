@@ -108,6 +108,9 @@ To complete auth (when a browser is available):
 - Skill installed: `skills/gog/` (Google Workspace CLI wrapper)
 - `gog` binary installed at: `~/.local/bin/gog`
   - Install method (Linux): download release tarball from <https://github.com/steipete/gogcli/releases> and `install` the `gog` binary.
+- Keyring backend: `file` (encrypted on-disk keyring)
+  - Password stored locally at: `~/.config/gogcli/keyring_password` (chmod 600)
+  - Wrapper used for non-interactive runs: `~/.local/bin/gogx` (exports `GOG_KEYRING_PASSWORD`)
 
 If you want to use this path, then:
 - `gog auth credentials /path/to/client_secret.json`
