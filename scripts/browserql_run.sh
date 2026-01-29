@@ -5,7 +5,7 @@ set -euo pipefail
 # Ensures we don't exceed Browserless concurrency limits.
 
 LOCKDIR="/tmp/browserql.lock"
-WAIT_SECS=180
+WAIT_SECS=600
 
 start_ts=$(date +%s)
 
