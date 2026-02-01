@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Woodhouse Curated Podcasts</title>
+    <link>https://github.com/woodhouse-podcast/podcast-feed</link>
+    <description>A curated podcast playlist feed managed by Woodhouse.</description>
+    <language>en-au</language>
+    <itunes:author>Woodhouse</itunes:author>
+    <itunes:explicit>false</itunes:explicit>
+    <atom:link href="https://woodhouse-podcast.github.io/podcast-feed/curated.xml" rel="self" type="application/rss+xml" />
+
+    <!-- Items will be added automatically once sources are configured. -->
+  </channel>
+</rss>
