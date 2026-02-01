@@ -11,6 +11,21 @@
     <itunes:explicit>false</itunes:explicit>
     <atom:link href="https://woodhouse-podcast.github.io/podcast-feed/curated.xml" rel="self" type="application/rss+xml" />
 
-    <!-- Items will be added automatically once sources are configured. -->
+    <item>
+      <title>Placeholder episode (will be replaced once sources are added)</title>
+      <description>This is a temporary item so podcast apps accept the feed. Send Woodhouse your podcast sources to populate real episodes.</description>
+      <guid isPermaLink="false">woodhouse-placeholder-1</guid>
+      <pubDate>Sun, 01 Feb 2026 08:09:58 GMT</pubDate>
+      <enclosure url="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" length="8945229" type="audio/mpeg" />
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Placeholder episode 2</title>
+      <description>Second temporary item.</description>
+      <guid isPermaLink="false">woodhouse-placeholder-2</guid>
+      <pubDate>Sun, 01 Feb 2026 08:09:58 GMT</pubDate>
+      <enclosure url="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" length="8945229" type="audio/mpeg" />
+      <itunes:explicit>false</itunes:explicit>
+    </item>
   </channel>
 </rss>
