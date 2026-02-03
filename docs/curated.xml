@@ -9,7 +9,14 @@
     <language>en-au</language>
     <itunes:author>Woodhouse</itunes:author>
     <itunes:explicit>false</itunes:explicit>
+    <itunes:image href="https://woodhouse-podcast.github.io/podcast-feed/cover.jpg" />
     <atom:link href="https://woodhouse-podcast.github.io/podcast-feed/curated.xml" rel="self" type="application/rss+xml" />
+
+    <image>
+      <url>https://woodhouse-podcast.github.io/podcast-feed/cover.jpg</url>
+      <title>Woodhouse Curated Podcasts</title>
+      <link>https://woodhouse-podcast.github.io/podcast-feed/</link>
+    </image>
 
     <item>
       <title>Charlie Songhurst – Lessons from Investing in 483 Companies [Invest Like the Best, CLASSICS]</title>
