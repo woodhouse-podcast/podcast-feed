@@ -50,5 +50,25 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
 
-  </channel>
+  <item>
+<title>#2206 - Chamath Palihapitiya - The Joe Rogan Experience</title>
+<description><![CDATA[
+<p><strong>Chamath Palihapitiya</strong> is a venture capitalist, engineer, and CEO of Social Capital. Formerly a Facebook executive, he is a prolific investor and host of the <em>All-In Podcast</em>.</p>
+<p>Topics discussed:</p>
+<ul>
+<li>Venture capital and technology investing</li>
+<li>Artificial intelligence and its implications</li>
+<li>Politics, media, and culture</li>
+<li>Business strategy and decision-making</li>
+</ul>
+<p>Original air date: September 25, 2024</p>
+<p>Learn more: <a href="https://chamath.substack.com">chamath.substack.com</a></p>
+]]></description>
+<guid isPermaLink="false">woodhouse-curated://joe-rogan-experience/2206-chamath-palihapitiya</guid>
+<pubDate>Wed, 25 Sep 2024 00:00:00 +0000</pubDate>
+<enclosure url="https://traffic.libsyn.com/joeroganexp/p2206.mp3" length="0" type="audio/mpeg" />
+<itunes:duration>7200</itunes:duration>
+<itunes:explicit>true</itunes:explicit>
+</item>
+</channel>
 </rss>
