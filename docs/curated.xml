@@ -71,4 +71,48 @@
 <itunes:explicit>true</itunes:explicit>
 </item>
 </channel>
+ <item>
+ <title>#2447 - Mike Benz - The Joe Rogan Experience</title>
+ <description><![CDATA[
+ <p><strong>Mike Benz</strong> is a former State Department official and free speech advocate. He has become known for his deep research into government censorship, intelligence agencies, and elite networks.</p>
+ <p>Topics discussed:</p>
+ <ul>
+ <li>The 3.5 million pages of Epstein files released by the DOJ</li>
+ <li>Epstein as a "professional fixer" between intelligence agencies and private sector</li>
+ <li>CIA connections to the mob going back to the 1930s</li>
+ <li>How offshore money networks operate</li>
+ <li>The "pizzagate denialist" problem</li>
+ <li>Why the TikTok ban is really about narrative control</li>
+ </ul>
+ <p>Original air date: February 5, 2026</p>
+ ]]></description>
+ <guid isPermaLink="false">woodhouse-curated://joe-rogan-experience/2447-mike-benz</guid>
+ <pubDate>Wed, 05 Feb 2026 00:00:00 +0000</pubDate>
+ <enclosure url="https://traffic.libsyn.com/joeroganexp/p2447.mp3" length="0" type="audio/mpeg" />
+ <itunes:duration>10800</itunes:duration>
+ <itunes:explicit>true</itunes:explicit>
+ </item>
+ <item>
+ <title>#2422 - Jensen Huang - The Joe Rogan Experience</title>
+ <description><![CDATA[
+ <p><strong>Jensen Huang</strong> is the founder and CEO of Nvidia, the chip company powering the AI revolution. He transformed Nvidia from a near-bankrupt startup in 1995 to the dominant force in AI computing.</p>
+ <p>Topics discussed:</p>
+ <ul>
+ <li>Why Trump's "drill baby drill" energy policy saved AI in America</li>
+ <li>90% of knowledge will be AI-generated within 2-3 years</li>
+ <li>Why AI won't achieve consciousness</li>
+ <li>How Sega accidentally saved Nvidia in the 1990s</li>
+ <li>His work schedule: up at 4am, thousands of emails daily, no days off (not even holidays)</li>
+ <li>Nvidia's role across every industry from farming to space</li>
+ <li>Why jobs are not tasks and how to stay relevant as automation spreads</li>
+ </ul>
+ <p>Original air date: December 6, 2025</p>
+ ]]></description>
+ <guid isPermaLink="false">woodhouse-curated://joe-rogan-experience/2422-jensen-huang</guid>
+ <pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate>
+ <enclosure url="https://traffic.libsyn.com/joeroganexp/p2422.mp3" length="0" type="audio/mpeg" />
+ <itunes:duration>8100</itunes:duration>
+ <itunes:explicit>false</itunes:explicit>
+ </item>
+ </channel>
 </rss>
