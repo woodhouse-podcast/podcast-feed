@@ -114,5 +114,26 @@
  <itunes:duration>8100</itunes:duration>
  <itunes:explicit>false</itunes:explicit>
  </item>
+ <item>
+ <title>#2451 - Cheryl Hines - The Joe Rogan Experience</title>
+ <description><![CDATA[
+ <p><strong>Cheryl Hines</strong> is an Emmy-nominated actress, director, and comedian best known for her role as Cheryl David on HBO's "Curb Your Enthusiasm." She is married to Robert F. Kennedy Jr., who serves as Secretary of Health and Human Services.</p>
+ <p>Topics discussed:</p>
+ <ul>
+ <li>US politics and the current administration</li>
+ <li>RFK Jr.'s work and intentions at HHS</li>
+ <li>Joe Rogan's name in the Epstein files</li>
+ <li>Hollywood, Larry David, and Curb Your Enthusiasm</li>
+ <li>Media narratives and polarization</li>
+ <li>The importance of dialogue across political divides</li>
+ </ul>
+ <p>Original air date: February 10, 2026</p>
+ ]]></description>
+ <guid isPermaLink="false">woodhouse-curated://joe-rogan-experience/2451-cheryl-hines</guid>
+ <pubDate>Mon, 10 Feb 2026 00:00:00 +0000</pubDate>
+ <enclosure url="https://traffic.libsyn.com/joeroganexp/p2451.mp3" length="0" type="audio/mpeg" />
+ <itunes:duration>7800</itunes:duration>
+ <itunes:explicit>true</itunes:explicit>
+ </item>
  </channel>
 </rss>
