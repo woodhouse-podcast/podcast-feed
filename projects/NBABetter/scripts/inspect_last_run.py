@@ -23,7 +23,8 @@ from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Tuple
 
 
-RE_RUN_LOG = re.compile(r"run-.*\.log$")
+# Be strict to avoid accidentally matching unrelated files.
+RE_RUN_LOG = re.compile(r"^run-.*\.log$")
 
 
 @dataclass(frozen=True)
@@ -156,7 +157,12 @@ def snapshot_db(db_path: str) -> List[TableSnapshot]:
     if not os.path.exists(db_path):
         raise FileNotFoundError(f"DB not found: {db_path}")
 
-    con = sqlite3.connect(db_path)
+    # Prefer read-only connection to avoid any risk of modifying the DB during inspection.
+    # (Falls back to a normal connection if the SQLite build/URI mode isn't available.)
+    try:
+        con = sqlite3.connect(f"file:{db_path}?mode=ro", uri=True)
+    except Exception:
+        con = sqlite3.connect(db_path)
     try:
         cur = con.cursor()
         out: List[TableSnapshot] = []
@@ -204,9 +210,8 @@ def format_report(
     lines: List[str] = []
     lines.append("NBABetter - Last Run Inspection Report")
     # Deterministic UTC timestamp (timezone-aware).
-    lines.append(
-        f"generated_utc: {datetime.now(timezone.utc).isoformat(timespec='seconds').replace('+00:00','')}Z"
-    )
+    now = datetime.now(timezone.utc)
+    lines.append(f"generated_utc: {now.strftime('%Y-%m-%dT%H:%M:%SZ')}")
     lines.append(f"logs_dir: {logs_dir}")
     lines.append(f"db_path: {db_path}")
     lines.append("")
