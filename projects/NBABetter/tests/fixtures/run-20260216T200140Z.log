@@ -1,0 +1,9 @@
+2026-02-16 20:01:43,050 - Main - INFO - Using Polymarket as primary provider
+2026-02-16 20:01:43,054 - Execution - INFO - Execution routing FORCED to: polymarket
+2026-02-16 20:01:43,054 - Execution - INFO - Execution mode is PAPER. No live venue login attempted.
+2026-02-16 20:01:43,065 - Main - INFO - DAILY SCHEDULE UPDATE - 2026-02-16 20:01
+2026-02-16 20:01:43,290 - Main - WARNING - No NBA games found for today.
+2026-02-16 21:01:46,317 - Main - INFO - DAILY SCHEDULE UPDATE - 2026-02-16 21:01
+2026-02-16 21:01:46,331 - Main - WARNING - No NBA games found for today.
+2026-02-17 09:00:00,836 - Main - INFO - Checking for pending bets to resolve...
+2026-02-17 09:00:00,860 - Main - INFO - No pending bets found.

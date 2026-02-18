@@ -1,0 +1,20 @@
+# Progress Log
+Run: 24d88973-948a-4cff-aed3-6cde5261e632
+Task: NBABetter daily improvement loop
+Started: 2026-02-18T07:32:00Z
+
+## Codebase Patterns
+- Repo root is `/home/ubuntu/clawd` but the NBABetter app lives in `projects/NBABetter` (logs + sqlite DB are in that subdir).
+- SQLite schema uses `timestamp` columns for `odds_snapshots`, `notional_bets`, `model_estimates`; `markets` uses `last_updated`; `live_orders` uses `updated_at/created_at`.
+
+---
+
+## 2026-02-18T07:36Z - US-001: Add reproducible last-run inspection report (logs + DB snapshot)
+- Implemented `scripts/inspect_last_run.py` to summarize latest `logs/run-*.log` and DB table snapshot (counts + latest timestamps).
+- Added pytest-style unit tests with a fixture log file and temporary sqlite DB (module loader registers in `sys.modules` to support `from __future__ import annotations`).
+- Files changed:
+  - projects/NBABetter/scripts/inspect_last_run.py
+  - projects/NBABetter/tests/test_inspect_last_run.py
+  - projects/NBABetter/tests/fixtures/run-20260216T200140Z.log
+- **Learnings:** the newest run log is reliably identified by mtime; keep parsing patterns tolerant (provider/mode lines vary slightly).
+---
