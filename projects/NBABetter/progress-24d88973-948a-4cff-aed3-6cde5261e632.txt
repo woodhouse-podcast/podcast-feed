@@ -1,0 +1,17 @@
+# Progress Log
+Run: 24d88973-948a-4cff-aed3-6cde5261e632
+Task: NBABetter daily improvement loop
+Started: 2026-02-18T07:42:00Z
+
+## Codebase Patterns
+- Preflight checks are run via `python preflight_check.py` and validate DB schema + execution mode safety rails.
+- Log files are written to `./logs/run-<timestamp>Z.log` with consistent INFO/WARN patterns suitable for regex parsing.
+
+---
+
+## 2026-02-18T07:45Z - US-001: Add reproducible last-run inspection report (logs + DB snapshot)
+- Added offline script to inspect the newest `run-*.log` and summarize provider, execution mode, and schedule/pending-bet counters.
+- Added sqlite snapshot reporting: row counts + latest timestamps for key tables (games, markets, odds_snapshots, notional_bets, model_estimates, live_orders).
+- Added pytest coverage with fixture log + temp sqlite DB.
+- Files changed: scripts/inspect_last_run.py, tests/test_inspect_last_run.py, tests/fixtures/run-20260216T200140Z.log, progress-24d88973-948a-4cff-aed3-6cde5261e632.txt
+---
